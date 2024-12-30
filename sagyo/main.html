@@ -34,42 +34,79 @@
   <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-          <a class="navbar-brand" href="#"></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarCollapse"
-            aria-controls="navbarCollapse"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon" src="../sagyo/taku-uryu/img/original.png"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav">
-              <!-- <li class="nav-item">
-                <img src="../sagyo/taku-uryu/img/original.png" alt="Icon" />
-                <a class="nav-link" href="#profile">Profile</a>
-              </li> -->
-              <li class="nav-item">
-                <a class="nav-link" href="#course">Profile</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#course">Course</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#sns">SNS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#reviews">Reviews</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">TAKU URYU</a>
+                <!-- <button class="navbar-toggler" type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#navbarCollapse" 
+                        aria-controls="navbarCollapse" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="bg-white navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#course">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#course">Course</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sns">SNS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reviews">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+
+        <style>
+          /* ナビゲーションのカスタムスタイル */
+          .navbar {
+              padding: 1rem;
+          }
+          
+          .navbar-brand {
+              color: #000 !important;
+              font-weight: bold;
+              /* background-color: #fff; */
+              padding: 5px 15px;
+              border-radius: 4px;
+              margin-right: 20px;
+              font-size: 1.2rem;
+          }
+  
+          .navbar-nav {
+              margin-left: 1rem;
+          }
+  
+          .nav-link {
+              color: rgba(255,255,255,0.8) !important;
+              padding: 0.5rem 1rem !important;
+          }
+  
+          .nav-link:hover {
+              color: #fff !important;
+          }
+  
+          /* モバイル対応 */
+          @media (max-width: 768px) {
+              .navbar-brand {
+                  margin-left: 0;
+              }
+              
+              .navbar-nav {
+                  margin-left: 0;
+                  padding-top: 1rem;
+              }
+          }
+      </style>
     </header>
     
     <main role="main">
@@ -446,13 +483,13 @@
                 <div class="card-header" id="faq1">
                   <h5 class="mb-0">
                     <button class="btn btn-link text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#answer1" aria-expanded="true" aria-controls="answer1">
-                      支払い方法はどうすればいいですか？
+                      Q. 支払い方法はどうすればいいですか？
                     </button>
                   </h5>
                 </div>
                 <div id="answer1" class="collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
                   <div class="card-body">
-                    現金と銀行振込、クレジットカード決済をご用意しております。クレジットのみ分割も可能です。
+                    A. 現金と銀行振込、クレジットカード決済をご用意しております。クレジットのみ分割も可能です。
                   </div>
                 </div>
               </div>
@@ -462,13 +499,13 @@
                 <div class="card-header" id="faq2">
                   <h5 class="mb-0">
                     <button class="btn btn-link text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer2" aria-expanded="false" aria-controls="answer2">
-                      トレーニング初心者なのですが大丈夫でしょうか？
+                      Q. トレーニング初心者なのですが大丈夫でしょうか？
                     </button>
                   </h5>
                 </div>
                 <div id="answer2" class="collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
                   <div class="card-body">
-                    はい！問題ありません。もしも不安感が強いようでしたら、まずは対面でのパーソナルの方がオススメです！
+                    A. はい！問題ありません。もしも不安感が強いようでしたら、まずは対面でのパーソナルの方がオススメです！
                   </div>
                 </div>
               </div>
@@ -478,13 +515,13 @@
                 <div class="card-header" id="faq3">
                   <h5 class="mb-0">
                     <button class="btn btn-link text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer3" aria-expanded="false" aria-controls="answer3">
-                      料金はいくらですか？
+                      Q. 料金はいくらですか？
                     </button>
                   </h5>
                 </div>
                 <div id="answer3" class="collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
                   <div class="card-body">
-                    その方その方の状況に合わせて、プランを提案させていただきます。
+                    A. その方その方の状況に合わせて、プランを提案させていただきます。
                   </div>
                 </div>
               </div>
@@ -494,16 +531,49 @@
                 <div class="card-header" id="faq4">
                   <h5 class="mb-0">
                     <button class="btn btn-link text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer4" aria-expanded="false" aria-controls="answer4">
-                      期間はどのくらいですか？
+                      Q. 期間はどのくらいですか？
                     </button>
                   </h5>
                 </div>
                 <div id="answer4" class="collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
                   <div class="card-body">
-                    最低3ヶ月から指導させていただきます。
+                    A. 最低3ヶ月から指導させていただきます。
                   </div>
                 </div>
               </div>
+              
+              <!-- 質問5 -->
+              <div class="card">
+                <div class="card-header" id="faq5">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer5" aria-expanded="false" aria-controls="answer5">
+                      Q. ボディメイク系でも教えていただけますか？
+                    </button>
+                  </h5>
+                </div>
+                <div id="answer5" class="collapse" aria-labelledby="faq5" data-bs-parent="#faqAccordion">
+                  <div class="card-body">
+                    A. ボディメイク系のクライアントさんも多いです！
+                  </div>
+                </div>
+              </div>
+
+              <!-- 質問6 -->
+              <div class="card">
+                <div class="card-header" id="faq6">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer6" aria-expanded="false" aria-controls="answer6">
+                      Q. 減量中でも受けられますか？
+                    </button>
+                  </h5>
+                </div>
+                <div id="answer6" class="collapse" aria-labelledby="faq6" data-bs-parent="#faqAccordion">
+                  <div class="card-body">
+                    A. お客様の状況にもよりますが可能です。
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
 
