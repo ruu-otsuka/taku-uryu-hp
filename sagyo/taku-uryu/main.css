@@ -2,9 +2,17 @@
 /********* 基本設定 ***********/
 /*  */
 
+.taku-font {
+  font-family: "Noto Sans JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
 body {
     color: #131313;
-    font-family: Montserrat;
+    /* font-family: Montserrat; */
+    font-family: "Noto Sans JP", serif;
     font-weight: 700;
 }
 
