@@ -1,4 +1,38 @@
 /*  */
+/********* スマホ対応 ***********/
+/*  */
+/* コンテナの余白調整 */
+@media (max-width: 576px) {
+  .container {
+      margin-left: 0px;
+      margin-right: 0px;
+      padding-right: 0px !important;
+      padding-left: 0px !important;
+  }
+}
+
+/* より小さいデバイス用 */
+@media (max-width: 375px) {
+  .container {
+      padding-right: 8px !important;
+      padding-left: 8px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+      max-width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+      max-width: 100%;
+  }
+}
+
+
+/*  */
 /********* 基本設定 ***********/
 /*  */
 
