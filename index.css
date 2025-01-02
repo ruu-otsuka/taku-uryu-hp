@@ -7,6 +7,49 @@ element.style {
   max-width: 100%;
 } */
 
+/* PCでは改行し、スマホでは改行しない */
+.pc-break {
+  display: block; /* PCでは改行 */
+}
+
+@media (max-width: 768px) {
+  .pc-break {
+    display: inline; /* スマホでは改行しない */
+  }
+}
+
+/* スマホでは改行し、PCでは改行しない */
+.sp-break {
+  display: inline; /* PCでは改行しない */
+}
+
+@media (max-width: 768px) {
+  .sp-break {
+    display: block; /* スマホでは改行 */
+  }
+}
+
+/* 改行用のspanを使用する場合 */
+.br-pc {
+  display: block; /* PCでは改行 */
+}
+
+@media (max-width: 768px) {
+  .br-pc {
+    display: none; /* スマホでは非表示 */
+  }
+}
+
+.br-sp {
+  display: none; /* PCでは非表示 */
+}
+
+@media (max-width: 768px) {
+  .br-sp {
+    display: block; /* スマホでは改行 */
+  }
+}
+
 @media (max-width: 768px) { /* スマホ用の指定 */
   .custom-container {
     max-width: 100%!important; /* 幅を画面いっぱいに広げる */
@@ -141,7 +184,6 @@ header {
 .navbar {
   padding: 10px 20px;
 }
-
 
 /*  */
 /********* class="top" > img ***********/
@@ -310,3 +352,4 @@ font-weight: 900;
   margin: 0;
   font-size: 12px;
 }
+
